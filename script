@@ -32,7 +32,8 @@ def doesnt_exist(driver, xpath):
 
 
 def random_comment():
-    with open('comments.txt', 'r') as f:
+    with open('commentsbusiness.txt', 'r') as f:
+    #with open('commentsrap.txt', 'r') as f:
         comments = [line.strip() for line in f]
     comment = random.choice(comments)
     return comment
